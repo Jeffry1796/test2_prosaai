@@ -15,7 +15,6 @@ class RTP_Audio:
             
             for i in range (1000):
                 try:
-                    print(i)
                     rtp_val = input_pyshark[i][3]
                     if rtp_val.payload:
                         rtp_list.append(rtp_val.payload.split(':'))
